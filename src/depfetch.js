@@ -37,6 +37,21 @@ export class Depfetch {
     });
   }
 
+  globSync(pattern, options) {
+    // default options
+    options = Object.assign({
+      cwd: process.cwd()
+    }, options);
+    // evaluate glob pattern and return components
+    return this._glob.sync(pattern, options)
+      .map(filePath => path.resolve(options.cwd, filePath))
+      .map(require)
+      .map(component =>
+        (component.default)
+        ? component.default
+        : component);
+  }
+
 }
 
 const singleton = new Depfetch(glob);
