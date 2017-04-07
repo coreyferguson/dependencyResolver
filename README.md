@@ -1,17 +1,21 @@
 
-# dependencies-by-name
+# dependencyResolver
 
 ## Install
 
 ```bash
-npm install dependencies-by-name
+npm install dependencyResolver
 ```
 
 ## Usage
 
+Fetch dependencies by convention using glob pattern.
+
 ```javascript
-var dependenciesByName = require('dependencies-by-name');
-dependenciesByName.sayHello();
+var dependenciesByName = require('dependencyResolver');
+dependenciesByName.glob('**/*Component.js').then(components => {
+  console.log(components); // => array of javascript modules
+});
 ```
 
 ## Contribution

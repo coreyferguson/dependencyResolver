@@ -4,8 +4,8 @@
 ## Install
 
 ```bash
-git clone TODO
-cd dependencies-by-name
+git clone git@github.com:coreyferguson/dependencyResolver.git
+cd dependencyResolver
 npm install
 npm link
 ```
