@@ -1,10 +1,10 @@
 
-# dependencyResolver
+# depfetch
 
 ## Install
 
 ```bash
-npm install dependencyResolver
+npm install depfetch
 ```
 
 ## Usage
@@ -12,8 +12,8 @@ npm install dependencyResolver
 Fetch dependencies by convention using glob pattern.
 
 ```javascript
-var dependenciesByName = require('dependencyResolver');
-dependenciesByName.glob('**/*Component.js').then(components => {
+var depfetch = require('depfetch');
+depfetch.glob('**/*Component.js').then(components => {
   console.log(components); // => array of javascript modules
 });
 ```

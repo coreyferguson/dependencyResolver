@@ -1,3 +1,3 @@
 
-import dependencyResolver from './dependencyResolver';
-export default dependencyResolver;
+import depfetch from './depfetch';
+export default depfetch;

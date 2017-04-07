@@ -1,5 +1,5 @@
 {
-  "name": "dependencyResolver",
+  "name": "depfetch",
   "version": "0.1.1",
   "description": "Fetch JavaScript dependencies by a given convention.",
   "license": "MIT",
@@ -47,6 +47,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreyferguson/dependencyResolver.git"
+    "url": "git@github.com:coreyferguson/depfetch.git"
   }
 }

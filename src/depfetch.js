@@ -3,7 +3,7 @@ import glob from 'glob';
 import path from 'path';
 import bluebird from 'bluebird';
 
-export class DependencyResolver {
+export class Depfetch {
 
   constructor(glob) {
     this._glob = bluebird.promisify(glob);
@@ -39,5 +39,5 @@ export class DependencyResolver {
 
 }
 
-const singleton = new DependencyResolver(glob);
+const singleton = new Depfetch(glob);
 export default singleton;

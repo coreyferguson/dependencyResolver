@@ -4,8 +4,8 @@
 ## Install
 
 ```bash
-git clone git@github.com:coreyferguson/dependencyResolver.git
-cd dependencyResolver
+git clone git@github.com:coreyferguson/depfetch.git
+cd depfetch
 npm install
 npm link
 ```
