@@ -15,7 +15,6 @@
     "release": "npm test && npm run babel && ./node_modules/.bin/release-it -c config/release.json"
   },
   "dependencies": {
-    "bluebird": "^3.5.0",
     "glob": "^7.1.1"
   },
   "devDependencies": {
@@ -23,6 +22,7 @@
     "babel-preset-es2015": "6.22.0",
     "babel-preset-es2016": "6.22.0",
     "babel-register": "6.22.0",
+    "bluebird": "^3.5.0",
     "chai": "3.5.0",
     "chai-as-promised": "6.0.0",
     "istanbul": "1.0.0-alpha.2",
