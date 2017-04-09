@@ -15,21 +15,21 @@ describe('depfetch integration tests', function() {
   it('depfetch.glob promise es5 components without options', function() {
     const componentA = require('../testbed/es5-components/a-component').default;
     const componentB = require('../testbed/es5-components/b-component').default;
-    const promise = depfetch.glob('**/es5-components/*-component.js');
+    const promise = depfetch.glob('test/**/es5-components/*-component.js');
     return expect(promise).to.eventually.be.eql([componentA, componentB]);
   });
 
   it('depfetch.glob promise node components without options', function() {
     const componentF = require('../testbed/node-components/f-component');
     const componentG = require('../testbed/node-components/g-component');
-    const promise = depfetch.glob('**/node-components/*-component.js');
+    const promise = depfetch.glob('test/**/node-components/*-component.js');
     return expect(promise).to.eventually.be.eql([componentF, componentG]);
   });
 
   it('depfetch.glob callback es5 components without options', function(done) {
     const componentA = require('../testbed/es5-components/a-component').default;
     const componentB = require('../testbed/es5-components/b-component').default;
-    depfetch.glob('**/es5-components/*-component.js', (err, components) => {
+    depfetch.glob('test/**/es5-components/*-component.js', (err, components) => {
       expect(err).to.be.null;
       expect(components).to.be.eql([componentA, componentB]);
       done();
@@ -39,7 +39,7 @@ describe('depfetch integration tests', function() {
   it('depfetch.glob callback node components without options', function(done) {
     const componentF = require('../testbed/node-components/f-component');
     const componentG = require('../testbed/node-components/g-component');
-    depfetch.glob('**/node-components/*-component.js', (err, components) => {
+    depfetch.glob('test/**/node-components/*-component.js', (err, components) => {
       expect(err).to.be.null;
       expect(components).to.be.eql([componentF, componentG]);
       done();
@@ -110,14 +110,14 @@ describe('depfetch integration tests', function() {
   it('depfetch.globSync es5 components without options', function() {
     const componentA = require('../testbed/es5-components/a-component').default;
     const componentB = require('../testbed/es5-components/b-component').default;
-    const components = depfetch.globSync('**/es5-components/*-component.js');
+    const components = depfetch.globSync('test/**/es5-components/*-component.js');
     expect(components).to.eql([componentA, componentB]);
   });
 
   it('depfetch.globSync node components without options', function() {
     const componentF = require('../testbed/node-components/f-component');
     const componentG = require('../testbed/node-components/g-component');
-    const components = depfetch.globSync('**/node-components/*-component.js');
+    const components = depfetch.globSync('test/**/node-components/*-component.js');
     expect(components).to.eql([componentF, componentG]);
   });
 
