@@ -1,6 +1,6 @@
 {
   "name": "depfetch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fetch JavaScript dependencies by a given convention.",
   "license": "MIT",
   "author": "Corey Ferguson <corey.t.ferguson@gmail.com>",
