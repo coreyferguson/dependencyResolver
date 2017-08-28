@@ -1,3 +1,3 @@
 
-import depfetch from './depfetch';
-export default depfetch;
+const depfetch = require('./depfetch');
+module.exports = depfetch;
