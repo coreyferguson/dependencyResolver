@@ -1,3 +1,3 @@
 
-const depfetch = require('./depfetch');
+const depfetch = require('./depfetch').default;
 module.exports = depfetch;
